@@ -1,0 +1,26 @@
+Welcome to use my tmux configuratuion.
+
+1.  The prefix is changed from C-b to C-x
+2.  Split the current pane into two with "prefix + |" vertically.
+3.  Also horizontally split with "prefix + _"
+4.  Select pane:
+        above pane: prefix + k
+        below pane: prefix + j
+        left pane:  prefix + h
+        right pane: prefix + l
+5.  Create a window with "prefix + c"
+6.  Kill the current window with "prefix + C"
+7.  List items in buffer with "prefix + C-b"
+8.  Paste the newest item in buffer with "prefix + C-v"
+9.  Choose an item from the buffer with "prefix + V"
+10. Set the mouse on or off with "prefix + C-m"
+11. Set the default session with "prefix + C-d"
+12. Reload the profile (~/.tmux.conf) with "prefix + r"
+13. Find a session with "prefix + C-f"
+14. Restore a session save by "prefix + C-s" or tmux-continuum plugin with
+    "prefix + C-r"
+15. Install plugins with "prefix + I" and uninstall with "prefix + U"
+16. Kill the current session with "prefix + X"
+17. Kill the current pane with "prefix + x"
+18. Show quick reference with "prefix + C-h"
+19. Show tmux manual with "prefix + H"
