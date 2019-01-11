@@ -7,12 +7,12 @@
 
 # Restore the default tmux environment based on tmux-resurrect
 res_def() {
-    cd ~/.tmuxrc.d/resurrect
+    cd ~/.tmux/resurrect
 
     # Back up the last environment and use my default environment
     [[ -f last ]] && mv last last.bak
     ln -s ../default.env last
-    ~/.tmuxrc.d/plugins/tmux-resurrect/scripts/restore.sh
+    ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh
 
     # Call the last environment back
     [[ -f last.bak ]] && mv last.bak last || rm last
