@@ -94,5 +94,9 @@ The default command key bindings are (including changes):
 EOF
 }
 
+left_status_info() {
+    awk -F= '/TION/ {print $2}' /etc/lsb-release | sed 's/"//g'
+}
+
 # Run the function what you want
 $1
