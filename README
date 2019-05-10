@@ -22,5 +22,5 @@ Welcome to use my tmux configuratuion.
 15. Install plugins with "prefix + I" and uninstall with "prefix + U"
 16. Kill the current session with "prefix + X"
 17. Kill the current pane with "prefix + x"
-18. Show quick reference with "prefix + C-h"
+18. Show quick reference with "prefix + C-j"
 19. Show tmux manual with "prefix + H"
