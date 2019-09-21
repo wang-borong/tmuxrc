@@ -5,8 +5,8 @@
 #      C-r         Restore session
 #      C-s         Save session
 #      C-h         Show the quick reference
-#      I           Show url
-#      u           Update plugins
+#      I           Install plugins
+#      u           Show url
 #      U           Update plugins
 #      H           Show tmux manual
 #      C           Kill the current window.
@@ -42,7 +42,7 @@
 #      o           Select the next pane in the current window.
 #      p           Change to the previous window.
 #      q           Briefly display pane indexes.
-#      r           Force redraw of the attached client.
+#      r           Reload profile.
 #      m           Mark the current pane (see select-pane -m).
 #      M           Clear the marked pane.
 #      s           Select a new session for the attached client interactively.
