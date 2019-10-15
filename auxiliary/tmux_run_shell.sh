@@ -27,8 +27,12 @@ _tmux_help() {
     cat $SCRIPT_DIR/tmux_cheatsheet.txt
 }
 
-_left_status_info() {
+_os_info() {
     awk -F= '/TION/ {print $2}' /etc/lsb-release | sed 's/"//g'
+}
+
+_uptime_info() {
+    uptime | awk -F ' ' '{print $3}' | sed 's/,[ ]*//' | sed 's/ //g'
 }
 
 #
