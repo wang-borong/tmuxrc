@@ -32,7 +32,7 @@ _os_info() {
 }
 
 _uptime_info() {
-    uptime | awk -F ' ' '{print $3}' | sed 's/,[ ]*//' | sed 's/ //g'
+    uptime | sed -e 's/ .*up \(.*\), *load average.*/\1/' -e 's/,  .* user[s]*$//' -e 's/ //g' -e 's/days,/d /'
 }
 
 #
