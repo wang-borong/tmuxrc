@@ -5,6 +5,8 @@
 #      C-r         Restore session
 #      C-s         Save session
 #      C-h         Show the quick reference
+#      C-c         Enter copy mode to copy text or view the history.
+#      C-v         Paste the most recently copied buffer of text.
 #      I           Install plugins
 #      u           Show url
 #      U           Update plugins
@@ -31,8 +33,6 @@
 #      ?           List all key bindings.
 #      D           Choose a client to detach.
 #      L           Switch the attached client back to the last session.
-#      [           Enter copy mode to copy text or view the history.
-#      ]           Paste the most recently copied buffer of text.
 #      c           Create a new window.
 #      d           Detach the current client.
 #      f           Prompt to search for text in open windows.
