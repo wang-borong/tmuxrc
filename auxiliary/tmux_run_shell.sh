@@ -28,7 +28,13 @@ _tmux_help() {
 }
 
 _os_info() {
-    awk -F= '/TION/ {print $2}' /etc/lsb-release | sed 's/"//g'
+    if [[ -e /etc/lsb-release ]]; then
+        awk -F= '/TION/ {print $2}' /etc/lsb-release | sed 's/"//g'
+    elif [[ ! -z $(lsb_release -d) ]]; then
+        lsb_release -d | awk -F":\t" '{print $2}'
+    else
+        echo "Unknown OS"
+    fi
 }
 
 _uptime_info() {
